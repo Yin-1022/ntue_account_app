@@ -2,11 +2,32 @@ import "../model/data.dart";
 class DataService{
   final List <Data> _data = [
     Data(
-        title: 'cake',
+        dateTime: DateTime(
+            2025,
+            01,
+            03,
+            0,
+            0,
+            0,
+            0,
+            0),
+        title: '牛肉麵',
         type: 'food',
-        dateTime: DateTime.now(),
-        dollar:100
+        dollar: 200
     ),
+    Data(dateTime: DateTime(
+        2025,
+        01,
+        04,
+        0,
+        0,
+        0,
+        0,
+        0),
+        title: '',
+        type: '',
+        dollar: 200
+    )
   ];
 
   List <Data> get data => _data;
