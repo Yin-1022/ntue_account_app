@@ -34,9 +34,8 @@ class HomePage extends StatelessWidget {
           ),
           Container(height: 100,),
           Container(width: 400, height: 2, color: Colors.grey,),
-          Container(height: 500,),
+          Container(height: 450,),
           Container(width: 400, height: 2, color: Colors.grey,),
-          Container(height: 30,),
           IconButton(onPressed: (){}, icon: Icon(Icons.home))
         ],
       ),
