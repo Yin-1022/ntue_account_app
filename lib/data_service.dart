@@ -6,28 +6,21 @@ class DataService {
         dateTime: DateTime(
             2025,
             01,
-            03,
-            0,
-            0,
-            0,
-            0,
-            0),
+            03
+        ),
         title: '牛肉麵',
         type: 'food',
         dollar: 200
     ),
-    Data(dateTime: DateTime(
+    Data(
+        dateTime: DateTime(
         2025,
         01,
-        04,
-        0,
-        0,
-        0,
-        0,
-        0),
-        title: '',
-        type: '',
-        dollar: 200
+        04
+    ),
+        title: '紅茶',
+        type: 'drink',
+        dollar: 100
     )
   ];
 
