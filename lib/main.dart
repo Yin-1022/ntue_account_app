@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'view/cal_page.dart';
+import 'view/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,44 +14,7 @@ class MyApp extends StatelessWidget
 
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-
-        appBar: AppBar(title: Center(child: Text('NTUE Account App', style: TextStyle(fontSize: 30)))),
-
-        body: Column(
-          children: [
-            Container(height: 30,),
-            Row(
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Column(
-                  children: [
-                    Text('monthly', style: TextStyle(fontSize: 30)),
-                    Text('expenses:', style: TextStyle(fontSize: 30)),
-                  ],
-                ),
-                Container(width: 100,),
-                Column(
-                  children: [
-                    Text('monthly', style: TextStyle(fontSize: 30)),
-                    Text('income:', style: TextStyle(fontSize: 30)),
-                  ],
-                ),
-              ],
-            ),
-            Container(height: 100,),
-            Container(width: 400, height: 2, color: Colors.grey,),
-            Container(height: 500,),
-            Container(width: 400, height: 2, color: Colors.grey,),
-            Container(height: 50,),
-            IconButton(onPressed: (){}, icon: Icon(Icons.home))
-          ],
-
-        ),
-
-      ),
+      home: HomePage(),
     );
-    return const Placeholder();
   }
 }
