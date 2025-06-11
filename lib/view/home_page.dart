@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      appBar: AppBar(title: Center(child: Text('NTUE Account App', style: TextStyle(fontSize: 30)))),
+      appBar: AppBar(title: Text('Account', style: TextStyle(fontSize: 25)),centerTitle: true,),
 
       body: Column(
         children: [
@@ -36,7 +36,6 @@ class HomePage extends StatelessWidget {
           Container(width: 400, height: 2, color: Colors.grey,),
           Container(height: 450,),
           Container(width: 400, height: 2, color: Colors.grey,),
-          IconButton(onPressed: (){}, icon: Icon(Icons.home))
         ],
       ),
     );

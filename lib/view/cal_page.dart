@@ -20,7 +20,7 @@ class _CalPageState extends State<CalPage>
     (
       appBar: AppBar
       (
-        title: Text(("Account")),
+        title: Text("Account", style: TextStyle(fontSize: 25)),
         centerTitle: true,
       ),
       body: Column
@@ -280,29 +280,6 @@ class _CalPageState extends State<CalPage>
             ],
           ),
         ]
-      ),
-      bottomNavigationBar: BottomNavigationBar
-      (
-        currentIndex: 2,
-        selectedItemColor: Colors.cyan,
-        items:
-        [
-          BottomNavigationBarItem
-          (
-              icon: Icon(Icons.list),
-              label: "list"
-          ),
-          BottomNavigationBarItem
-            (
-            icon: Icon(Icons.home),
-            label: "home"
-          ),
-          BottomNavigationBarItem
-            (
-            icon: Icon(Icons.calculate),
-            label: "calculate"
-          ),
-        ],
       ),
     );
   }
